@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  background-color: #0f1115; /* Dark, premium background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Calculator Container */
+.calculator-container {
+  background: linear-gradient(145deg, #252a34, #1b1e24); /* Subtle metallic finish */
+  width: 460px; /* Increased width */
+  border-radius: 18px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Display Section */
+.calculator-display {
+  background: rgba(255, 255, 255, 0.05); /* Glass effect */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  text-align: right;
+  color: #e5e7eb;
+  font-family: "Roboto Mono", monospace;
+  box-shadow: inset 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-display .expression {
+  font-size: 1.3rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.calculator-display .result {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Buttons Section */
+.calculator-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+/* Grid for Buttons */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 3;
+}
+
+.operators-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  flex: 0.8; /* Reduced operator button width */
+}
+
+/* Button Styling */
+.button {
+  background: linear-gradient(145deg, #323842, #1d2228); /* Realistic matte-finish */
+  color: #f8fafc;
+  border: none;
+  border-radius: 10px;
+  padding: 15px; /* Reduced padding for smaller size */
+  font-size: 1.4rem; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), inset 0px 3px 3px rgba(255, 255, 255, 0.05);
+}
+
+.button:active {
+  transform: translateY(2px); /* Pressed effect */
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Special Button Styles */
+.button-clear {
+  background: linear-gradient(145deg, #b91c1c, #7f1d1d);
+  font-size: 1.2rem; /* Smaller font for better proportion */
+}
+
+.button-clear:hover {
+  background: #991b1b;
+}
+
+.button-operator {
+  background: linear-gradient(145deg, #136f63, #10594e);
+  font-size: 1.2rem; /* Smaller than numbers */
+  padding: 12px; /* Reduced size */
+}
+
+.button-operator:hover {
+  background: #0f5247;
+}
+
+.button-equal {
+  background: linear-gradient(145deg, #c79317, #a87412);
+  color: #1a1d22;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.button-equal:hover {
+  background: #a87412;
+}
